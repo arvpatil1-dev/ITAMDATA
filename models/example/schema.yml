@@ -1,0 +1,35 @@
+
+version: 2
+
+models:
+    - name: my_first_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: my_second_dbt_model
+      description: "A starter dbt model"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+sources:
+    - name: raw
+      database: ITEMDATA
+      schema: STGDATA
+      tables:
+          - name: CUSTOMER
+            columns: 
+                - name: CUSTOMER_ID
+                  description: "the primary" 
+                  tests:
+                       - unique
+                       - not_null 
+          - name: ORDERS
+          - name: ITEMS
