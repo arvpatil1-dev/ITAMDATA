@@ -24,3 +24,4 @@ select * from {{ source('raw', 'CUSTOMERS') }}
   where updated_at > (select max(loaded_at) from {{ this }})
 {% endif %}
 */
+
