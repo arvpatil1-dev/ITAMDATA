@@ -24,9 +24,9 @@ sources:
       database: ITEMDATA
       schema: STGDATA
       tables:
-          - name: CUSTOMER
+          - name: CUSTOMERS
             columns: 
-                - name: CUSTOMER_ID
+                - name: ID
                   description: "the primary" 
                   tests:
                        - unique
