@@ -1,1 +1,1 @@
-select * from {{ source('raw', 'ORDERS') }};
+select * from {{ source('raw', 'ORDERS') }}
